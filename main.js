@@ -10,20 +10,21 @@ let emailRe =
 
 btnOne.addEventListener("click", function (e) {
   errorMessage.innerHTML = "";
+  e.preventDefault();
   if (!emailRe.test(email.value)) {
-    e.preventDefault();
+    
     errorMessage.innerHTML = "valid email required";
     email.style.borderColor = "hsl(4, 100%, 67%)";
     email.style.color = "hsl(4, 100%, 67%)";
     email.style.backgroundColor = "hsl(4, 100%, 90%)";
   } else {
-    container.classList.add("hidden");
-    subscribing.classList.add("show");
+    container.classList.toggle("hidden");
+    subscribing.classList.toggle("show");
   }
 });
 
 btnTwo.addEventListener("click", function () {
   subscribing.classList.remove("show");
-  container.classList.add("show");
+  container.classList.toggle("show-2");
   email.value = "";
 });

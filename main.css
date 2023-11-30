@@ -248,3 +248,7 @@ main .hidden {
 main .show {
   display: block;
 }
+
+main .show-2 {
+  display: flex;
+}
