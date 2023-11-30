@@ -18,13 +18,15 @@ btnOne.addEventListener("click", function (e) {
     email.style.color = "hsl(4, 100%, 67%)";
     email.style.backgroundColor = "hsl(4, 100%, 90%)";
   } else {
-    container.classList.toggle("hidden");
-    subscribing.classList.toggle("show");
+    container.classList.add("hidden");
+    container.classList.remove("show-2");
+    subscribing.classList.add("show");
   }
 });
 
 btnTwo.addEventListener("click", function () {
   subscribing.classList.remove("show");
-  container.classList.toggle("show-2");
+  container.classList.add("show-2");
+  container.classList.remove("hidden");
   email.value = "";
 });

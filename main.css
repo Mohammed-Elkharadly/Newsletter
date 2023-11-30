@@ -19,7 +19,7 @@ main {
   background-color: hsl(234, 29%, 20%);
 }
 
-main .container {
+.container {
   display: flex;
   background-color: hsl(0, 0%, 100%);
   padding: 2rem;
@@ -27,8 +27,8 @@ main .container {
   border-radius: 3rem;
 }
 
-@media(max-width: 59em) {
-  main .container {
+@media (max-width: 59em) {
+  .container {
     flex-direction: column-reverse;
     margin: 0;
     padding: 0;
@@ -36,50 +36,49 @@ main .container {
   }
 }
 
-main .container .image-1 {
+.image-1 {
   display: block;
-
 }
 
-@media(max-width: 59em) {
-  main .container .image-1 {
+@media (max-width: 59em) {
+  .image-1 {
     display: none;
   }
 }
 
-main .container .image-2 {
+.image-2 {
   display: none;
 }
 
-@media(max-width: 59em) {
-  main .container .image-2 {
+@media (max-width: 59em) {
+  .image-2 {
     display: block;
   }
 }
 
-main .container .information {
+.information {
   padding: 3rem;
 }
 
-@media(max-width: 59em) {
-  main .container .information {
+@media (max-width: 59em) {
+  .information {
     padding: 2rem;
   }
 }
 
-main .container .information h1 {
+.information h1 {
   font-size: 6.5rem;
   color: hsl(234, 29%, 20%);
   margin: 2rem 0;
 }
 
-@media(max-width: 59em) {
-  main .container .information h1 {
+@media (max-width: 59em) {
+  .information h1 {
     font-size: 4rem;
   }
 }
 
-main .container .information p {
+.information p {
   width: 40rem;
   font-size: 1.6rem;
   color: hsl(234, 29%, 20%);
@@ -87,45 +86,45 @@ main .container .information p {
   line-height: 1.5;
 }
 
-@media(max-width: 59em) {
-  main .container .information p {
+@media (max-width: 59em) {
+  .information p {
     width: 33rem;
     font-size: 1.5rem;
   }
 }
 
-main .container .information .list {
+.list {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   margin: 1.4rem 0;
 }
 
-main .container .information .span {
+.span {
   font-size: 1.6rem;
   color: hsl(234, 29%, 20%);
 }
 
-@media(max-width: 59em) {
-  main .container .information .span {
+@media (max-width: 59em) {
+  .span {
     font-size: 1.5rem;
     width: 28rem;
   }
 }
 
-main .container .information form {
+#form {
   margin: 4rem 0;
   width: 40rem;
   position: relative;
 }
 
-@media(max-width: 59em) {
-  main .container .information form {
+@media (max-width: 59em) {
+  #form {
     width: 33rem;
   }
 }
 
-main .container .information form .error-message {
+.error-message {
   position: absolute;
   top: 0;
   right: 0;
@@ -133,19 +132,19 @@ main .container .information form .error-message {
   font-size: 1.5rem;
 }
 
-main .container .information form .form-email {
+.form-email {
   font-size: 1.6rem;
   font-weight: bold;
   color: hsl(234, 29%, 20%);
 }
 
-@media(max-width: 59em) {
-  main .container .information form .form-email {
+@media (max-width: 59em) {
+  .form-email {
     font-size: 1.5rem;
   }
 }
 
-main .container .information form .form-email input {
+#email {
   width: 100%;
   padding: 2rem;
   border-radius: 0.5rem;
@@ -153,12 +152,12 @@ main .container .information form .form-email input {
   margin: 1rem 0 2rem;
 }
 
-main .container .information form .form-email input:focus {
+#email:focus {
   outline: none;
   border: 1px solid hsl(234, 29%, 20%);
 }
 
-main .container .information form .submit {
+.submit {
   display: block;
   width: 100%;
   padding: 1.5rem;
@@ -171,7 +170,7 @@ main .container .information form .submit {
   cursor: pointer;
 }
 
-main .container .information form .submit:hover {
+.submit:hover {
   background-image: linear-gradient(
     to right,
     hsl(338, 76%, 67%),
@@ -179,7 +178,7 @@ main .container .information form .submit:hover {
   );
 }
 
-main .subscribing {
+.subscribing {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -191,8 +190,8 @@ main .subscribing {
   display: none;
 }
 
-@media(max-width: 25em) {
-  main .subscribing {
+@media (max-width: 25em) {
+  .subscribing {
     width: 100%;
     height: 100vh;
     border-radius: 0;
@@ -200,20 +199,20 @@ main .subscribing {
   }
 }
 
-main .subscribing .heading {
+.heading {
   font-size: 5rem;
   color: hsl(234, 29%, 20%);
   margin: 2rem 0;
 }
 
-main .subscribing .paragraph {
+.paragraph {
   font-size: 1.6rem;
   margin-bottom: 3rem;
   line-height: 1.5;
   color: hsl(234, 29%, 20%);
 }
 
-main .subscribing .button {
+.button {
   display: block;
   width: 100%;
   padding: 1.5rem;
@@ -227,13 +226,13 @@ main .subscribing .button {
   cursor: pointer;
 }
 
-@media(max-width: 25em) {
-  main .subscribing .button{
+@media (max-width: 25em) {
+  .button {
     margin-top: 12rem;
   }
 }
 
-main .subscribing .button:hover {
+.button:hover {
   background-image: linear-gradient(
     to right,
     hsl(338, 76%, 67%),
@@ -241,14 +240,14 @@ main .subscribing .button:hover {
   );
 }
 
-main .hidden {
+.hidden {
   display: none;
 }
 
-main .show {
+.show {
   display: block;
 }
 
-main .show-2 {
+.show-2 {
   display: flex;
 }
